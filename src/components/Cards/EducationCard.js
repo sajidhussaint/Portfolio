@@ -132,17 +132,13 @@ const EducationCard = ({ education }) => {
     return (
         <Card>
             <Top>
-                <Image src={require(`../../images/${education.img}`)} />
+                
                 <Body>
                     <Name>{education.school}</Name>
                     <Degree>{education.degree}</Degree>
                     <Date>{education.date}</Date>
                 </Body>
             </Top>
-            <Grade><b>Grade: </b>{education.grade}</Grade>
-            <Description>
-                <Span>{education.desc}</Span>
-            </Description>
         </Card>
     )
 }
